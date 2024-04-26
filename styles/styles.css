@@ -47,6 +47,10 @@ h1, h3 {
     color: #FFFF99;
 }
 
+.caja-presentacion p {
+    line-height: 1.5;
+}
+
 .caja-presentacion{
     display: flex;
     flex-direction: column;
@@ -56,7 +60,6 @@ h1, h3 {
     box-shadow: -6px -5px 5px 0px rgba(0,0,0,1), 16px 12px #FBEC5D, 30px 20px gray;
     margin: 40px 20% 50px 20%;
 }
-
 
 .contenedor-tarjetas {
     background-color: #222222;
@@ -89,22 +92,20 @@ h1, h3 {
 
 .tarjeta a div p.css, .tarjeta a div p.html {
     margin: 20px 10px 10px 10px;
-    font-size: 18px;
-    transition: all 300ms;
+    font-size: 16px;
+    transition: all 150ms ease-in-out;
     position: absolute;
     top: 50px;
     left: 50px;
-    font-style: italic;
 }
 
 .tarjeta a div p.js {
     margin: 20px 10px 10px 10px;
-    font-size: 18px;
-    transition: all 300ms;
+    font-size: 16px;
+    transition: all 150ms ease-in-out;
     position: absolute;
     top: 50px;
     left: 30px;
-    font-style: italic;
 }
 
 .tarjeta a div img {
@@ -119,7 +120,6 @@ h1, h3 {
     filter: drop-shadow(1px 1px 20px rgb(0, 4, 255));
     transform: scale(1.05);
 }
-
 
 .tarjeta a div:hover > img.img-html {
     filter: drop-shadow(1px 1px 20px rgb(253, 80, 0));
@@ -138,12 +138,12 @@ h1, h3 {
 
 .tarjeta a div:hover > p.html {
     transform: translate(0px, 100px) scale(1.4);
-    color: rgb(235, 94, 28);
+    color: rgb(233, 120, 68);
 }
 
 .tarjeta a div:hover > p.js {
     transform: translate(0px, 100px) scale(1.4);
-    color: rgb(230, 255, 1);
+    color: rgb(200, 212, 84);
 }
 
 .tarjeta a div {
@@ -271,7 +271,7 @@ input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
 .contenedor-input input:focus ~ span, .contenedor-input input:valid ~ span {
     transform: translate(10px, -32px) scale(1);
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #FFFF99;
     box-shadow: 0px -4px 12px 1px rgba(0,0,0,0.75);
     border-radius: 4px;
@@ -281,7 +281,7 @@ input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
 .contenedor-input textarea:focus ~ span, .contenedor-input textarea:valid ~ span {
     transform: translate(10px, -36px) scale(1);
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #FFFF99;
     box-shadow: 0px -4px 12px 1px rgba(0,0,0,0.75);
     border-radius: 4px;
@@ -316,12 +316,14 @@ input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
+    filter: grayscale(0.8);
     transition: all 400ms;
 }
 
 .tarjeta-nuevaActividad:hover {
     transform: translateY(-15px);
     cursor: pointer;
+    filter: grayscale(0);
 }
 
 .imagen-nuevaActividad {

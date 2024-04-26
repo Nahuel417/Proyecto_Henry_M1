@@ -13,87 +13,93 @@
     <title>Document</title>
 </head>
 <body>
+    
     <header>
-        <h1>Nahuel Banco</h1>
-        <h3>Mi Pagina Web</h3>
+        <div>
+            <h1>Nahuel Banco</h1>
+            <h3>Proyecto integrador M1</h3>
+        </div>
     </header>
 
     <main>
         <div class="contenedor-main">
             
             <section class="seccion-presentacion">
+                <div class="contenedor-presentacion-fondo">
                     <div class="caja-presentacion" >
                         <h3> ¿Quién soy?</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum reprehenderit dolores officia deserunt? 
-                            Vel fugiat saepe natus fugit facere amet tenetur, similique repellat laboriosam, ullam quidem aliquid! Omnis, dolor.
+                            Bienvenidos a mi pagina web!. Mi nombre es Nahuel Banco, soy de Santiago del Estero provincia de Argentina y tengo 23 años.
+                            Soy una persona a la que le gusta mucho aprender cosas nuevas y seguir perfeccionandose dia a dia. Desde conocí el mundo de la programación
+                            hace casi un año, descubrí que es algo que me genera mucha pasion (en especial la parte del front😉) 
+                            y eso me motiva a seguir profundizando aun más mis conocimientos y mejorando con las buenas practicas.
                         </p>  
                     </div>
+                </div>
             </section>
 
             <section class="seccion-tarjetas">
-                    <div class="contenedor-tarjetas">
-                        <h3>Mis Tecnologias Favoritas</h3>
-    
-                        <div class="caja-tarjetas">
-                            <article class="tarjeta">
-                                <a href="https://lenguajehtml.com/html/" target="_blank">
-                                    <div >
-                                        <img class="img-html" src="./assets/img/html.png" alt="html"  width="170px">
-                                        <p class="html">Html</p>
-                                    </div>
-                                </a>
-                            </article>
-                        
-                            <article class="tarjeta">
-                                <a href="https://lenguajecss.com/css/" target="_blank"> 
-                                    <div>
-                                        <img class="img-css" src="./assets/img/css.png" alt="css" width="170px"> 
-                                        <p class="css">Css</p>
-                                    </div>
-                                </a>
-                            </article>
-    
-                            <article class="tarjeta">
-                                <a href="https://lenguajejs.com/javascript/" target="_blank">
-                                    <div>
-                                        <img class="img-js" src="./assets/img/js.png" alt="javaScript" width="170px">
-                                        <p class="js">JavaScript</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
+                <div class="contenedor-tarjetas">
+                    <h3>Mis Tecnologias Favoritas</h3>
+
+                    <div class="caja-tarjetas">
+                        <article class="tarjeta">
+                            <a href="https://lenguajehtml.com/html/" target="_blank">
+                                <div >
+                                    <img class="img-html" src="./assets/img/html.png" alt="html"  width="170px">
+                                    <p class="html">Html</p>
+                                </div>
+                            </a>
+                        </article>
                     
+                        <article class="tarjeta">
+                            <a href="https://lenguajecss.com/css/" target="_blank"> 
+                                <div>
+                                    <img class="img-css" src="./assets/img/css.png" alt="css" width="170px"> 
+                                    <p class="css">Css</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="tarjeta">
+                            <a href="https://lenguajejs.com/javascript/" target="_blank">
+                                <div>
+                                    <img class="img-js" src="./assets/img/js.png" alt="javaScript" width="170px">
+                                    <p class="js">JavaScript</p>
+                                </div>
+                            </a>
+                        </article>
                     </div>
+                
+                </div>
             </section>
 
             <section class="seccion-actividades">
-                    <div class="caja-formulario">
-                        <h3>Mis Actividades Favoritas</h3>
-                        <form action="">
-                            <div class="contenedor-input">
-                                <input type="text" name="tituloActividad" id="tituloActividad" required>
-                                <span for="tituloActividad">Titulo de la Actividad</span>
-                            </div>
+                <div class="caja-formulario">
+                    <h3>Mis Actividades Favoritas</h3>
+                    <form action="">
+                        <div class="contenedor-input">
+                            <input type="text" name="tituloActividad" id="tituloActividad" required>
+                            <span for="tituloActividad">Titulo de la Actividad</span>
+                        </div>
 
-                            <div class="contenedor-input">
-                                <textarea name="descripcionActividad" id="descripcionActividad" cols="30" rows="10" required></textarea>
-                                <span for="tituloActividad" class="labelTextarea">Descripcion de la Actividad</span>
-                            </div>
+                        <div class="contenedor-input">
+                            <textarea name="descripcionActividad" id="descripcionActividad" cols="30" rows="10" required></textarea>
+                            <span for="tituloActividad" class="labelTextarea">Descripcion de la Actividad</span>
+                        </div>
 
-                            <div class="contenedor-input">
-                                <input type="text" name="linkImg" id="linkImg" required>
-                                <span for="tituloActividad">Link de Imagen</span>
-                            </div>
+                        <div class="contenedor-input">
+                            <input type="text" name="linkImg" id="linkImg" required>
+                            <span for="tituloActividad">Link de Imagen</span>
+                        </div>
 
-                            <div class="boton">
-                                <button name="boton-agregarActividad" id="boton-agregarActividad">Agregar Actividad</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="boton">
+                            <button name="boton-agregarActividad" id="boton-agregarActividad">Agregar Actividad</button>
+                        </div>
+                    </form>
+                </div>
             </section>
 
-            
             <section class="seccion-nuevasActividades" id="seccion-nuevasActividades" > 
                 <p id="sinActividades">Sin Actividades por el momento</p>
                 <div class="contenedor-nuevasActividades oculto" id="contenedor-nuevasActividades" >
@@ -103,10 +109,6 @@
         </div>
     </main>
 
-    <footer>
-
-    </footer>
-    
     <script src="./scripts/index.js"></script>
 </body>
 </html>

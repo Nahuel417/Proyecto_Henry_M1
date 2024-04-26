@@ -1,3 +1,4 @@
+
 class Activity {
     constructor(id, title, description, imgUrl) {
         this.id = id
@@ -175,7 +176,3 @@ function eliminarTarjeta(id) {
     repository.deleteActivity(id)
     convertirActividades()
 }
-
-module.exports = {Activity, Repository}
-
-

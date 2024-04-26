@@ -1,0 +1,359 @@
+
+* {
+    font-family: "Karla", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-image: url('/assets/img/logo3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+header, header h3 {
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px white, 1px 1px 15px white, 1px 1px 30px white;
+    animation: parpadear 1s infinite backwards;
+}
+
+@keyframes parpadear {
+    to {
+        text-shadow: none;
+        color: rgb(189, 185, 185);
+    }
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.contenedor-main p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.seccion-presentacion, .seccion-actividades {
+    margin-top: 20px;
+    text-align: center;
+} 
+
+.caja-presentacion h3 {
+    margin-bottom: 5px;
+    color: #FFFF99;
+}
+
+.caja-presentacion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222222;
+    box-shadow: -6px -5px 5px 0px rgba(0,0,0,1), 16px 12px #FBEC5D, 30px 20px gray;
+    margin: 40px 20% 50px 20%;
+}
+
+
+.contenedor-tarjetas {
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -6px -5px 5px 0px rgba(0,0,0,1), 16px 12px #FBEC5D, 30px 20px gray;
+    margin: 40px 20% 50px 20%; 
+}
+
+.contenedor-tarjetas h3 {
+    padding: 15px;
+    color: #FFFF99;
+}
+
+.caja-tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.tarjeta a div {
+    position: relative;
+}
+
+.tarjeta a div p.js, .tarjeta a div p.html, .tarjeta a div p.css {
+    color: transparent;
+}
+
+.tarjeta a div p.css, .tarjeta a div p.html {
+    margin: 20px 10px 10px 10px;
+    font-size: 18px;
+    transition: all 300ms;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-style: italic;
+}
+
+.tarjeta a div p.js {
+    margin: 20px 10px 10px 10px;
+    font-size: 18px;
+    transition: all 300ms;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-style: italic;
+}
+
+.tarjeta a div img {
+    padding: 10px;
+}
+
+.tarjeta a div img.img-css, .tarjeta a div img.img-js, .tarjeta a div img.img-html {
+    transition: all 300ms;
+}
+
+.tarjeta a div:hover > img.img-css {
+    filter: drop-shadow(1px 1px 20px rgb(0, 4, 255));
+    transform: scale(1.05);
+}
+
+
+.tarjeta a div:hover > img.img-html {
+    filter: drop-shadow(1px 1px 20px rgb(253, 80, 0));
+    transform: scale(1.05);
+}
+
+.tarjeta a div:hover > img.img-js {
+    filter: drop-shadow(1px 1px 20px rgb(230, 255, 1));
+    transform: scale(1.05);
+}
+
+.tarjeta a div:hover > p.css {
+    transform: translate(0px, 100px) scale(1.4);
+    color: rgb(57, 132, 243);
+}
+
+.tarjeta a div:hover > p.html {
+    transform: translate(0px, 100px) scale(1.4);
+    color: rgb(235, 94, 28);
+}
+
+.tarjeta a div:hover > p.js {
+    transform: translate(0px, 100px) scale(1.4);
+    color: rgb(230, 255, 1);
+}
+
+.tarjeta a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-actividades h3 {
+    text-align: center;
+    margin: 0 0 15px 0;
+    color: #FFFF99;
+}
+
+.caja-formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -6px -5px 5px 0px rgba(0,0,0,1), 16px 12px #FBEC5D, 30px 20px gray;
+    margin: 40px 20% 50px 20%;
+}
+
+.caja-formulario div {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.caja-formulario div input, .caja-formulario div textarea {
+    width: 80%;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+}
+
+.caja-formulario div.boton {
+    text-align: center;
+}
+
+.boton button {
+    background-color: #222222;
+    border: solid 1px #FFFF99;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    width: 30%;
+    transition: 500ms ease-in-out;
+}
+
+.boton button:hover {
+    cursor: pointer;
+    color: #FFFF99;
+    border: solid 1px transparent;
+    box-shadow: 0px 0px 5px 3px #FFFF99;
+}
+
+#tituloActividad, #descripcionActividad, #linkImg {
+    background: transparent;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.75);
+    outline: none;
+    padding: 16px;
+    padding-bottom: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+#tituloActividad:focus, #descripcionActividad:focus, #linkImg:focus {
+    outline: solid 1px #FFFF99;
+    box-shadow: 0px 0px 13px 4px rgba(0,0,0,1);
+}
+
+#tituloActividad:valid, #descripcionActividad:valid, #linkImg:valid {
+    outline: solid 1px #FFFF99;
+    box-shadow: 0px 0px 13px 4px rgba(0,0,0,1);
+}
+
+input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
+    color: whitesmoke;
+}
+
+#sinActividades.ocultar {
+    display: none;
+}
+
+#sinActividades {
+    color: white;
+    background-color: gray;
+    margin: 40px 40% 50px 40%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 4px rgba(0,0,0,1);
+    text-shadow: 1px 1px 5px black, 1px 1px 15px black, 1px 1px 30px black;
+    animation: parpadear 800ms infinite backwards;
+}
+
+.contenedor-input {
+    position: relative;
+}
+
+.contenedor-input span{
+    position: absolute;
+    top: 48%;
+    left: 11%;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: gray;
+    background-color: #222222;
+    transition: 0.5s;
+}
+
+.contenedor-input span.labelTextarea {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: gray;
+    background-color: #222222;
+    transition: 0.5s;
+}
+
+.contenedor-input input:focus ~ span, .contenedor-input input:valid ~ span {
+    transform: translate(10px, -32px) scale(1);
+    padding: 0 10px;
+    font-size: 14px;
+    background-color: #FFFF99;
+    box-shadow: 0px -4px 12px 1px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    color: black;
+}
+
+.contenedor-input textarea:focus ~ span, .contenedor-input textarea:valid ~ span {
+    transform: translate(10px, -36px) scale(1);
+    padding: 0 10px;
+    font-size: 14px;
+    background-color: #FFFF99;
+    box-shadow: 0px -4px 12px 1px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    color: black;
+}
+
+.seccion-nuevasActividades {
+    padding-bottom: 5px;
+}
+
+.contenedor-nuevasActividades.oculto {
+    display: none;
+}
+
+.contenedor-nuevasActividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #222222;
+    border-radius: 10px;
+    margin: 40px 20% 50px 20%;
+    box-shadow: -6px -5px 5px 0px rgba(0,0,0,1), 16px 12px #FBEC5D, 30px 22px gray;
+    padding: 15px;
+}
+
+.tarjeta-nuevaActividad {
+    margin: 10px 5px;
+    padding: 15px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 10px 10px 8px -4px rgba(0,0,0,0.75);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: all 400ms;
+}
+
+.tarjeta-nuevaActividad:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.imagen-nuevaActividad {
+    width: 100%;
+    min-height: 190px;
+    border-radius:10px;
+}
+
+.titulo-nuevaActividad {
+    margin: 5px 0;
+}
+
+p.descripcion-nuevaActividad {
+    margin: 5px 0;
+    color: rgb(180, 180, 180);
+}
+
+button.btn-nuevaActividad {
+    margin: 35px 0 5px 0;
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    width: 60%;
+    transition: 400ms ease-in-out;
+}
+
+button.btn-nuevaActividad:hover {
+    cursor: pointer;
+    color: #FFFF99;
+    background-color: rgba(34, 34, 34, 1);
+    border: solid 1px transparent;
+    box-shadow: 0px 0px 5px 3px gray;
+}
